@@ -26,7 +26,8 @@ delete from major where mno=3
 select * from major
 
 --delete something that has reference from others
---example, delete major SE which Student Jerry studies at, which can't be done without changing major
+--example, delete major SE whi
+ch Student Jerry studies at, which can't be done without changing major
 update stu set mno=null where mno=2 --set the students studying at SE to null
 delete from major where mno=2 --now we can delete the major
 
